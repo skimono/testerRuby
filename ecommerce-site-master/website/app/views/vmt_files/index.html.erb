@@ -1,0 +1,43 @@
+<h1>Listing vmt_files</h1>
+
+<table>
+  <tr>
+    <th>Filename</th>
+    <th>Description</th>
+    <th>Last updated</th>
+    <th>Revision</th>
+    <th>Last update by</th>
+    <th>Is locked</th>
+    <th>Vmtdata</th>
+    <th>Eco</th>
+    <th>In agile</th>
+    <th>Oem</th>
+    <th>Oem group</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @vmt_files.each do |vmt_file| %>
+  <tr>
+    <td><%= vmt_file.filename %></td>
+    <td><%= vmt_file.description %></td>
+    <td><%= vmt_file.last_updated %></td>
+    <td><%= vmt_file.revision %></td>
+    <td><%= vmt_file.last_update_by %></td>
+    <td><%= vmt_file.is_locked %></td>
+    <td><%= vmt_file.vmtdata %></td>
+    <td><%= vmt_file.eco %></td>
+    <td><%= vmt_file.in_agile %></td>
+    <td><%= vmt_file.oem %></td>
+    <td><%= vmt_file.oem_group %></td>
+    <td><%= link_to 'Show', vmt_file %></td>
+    <td><%= link_to 'Edit', edit_vmt_file_path(vmt_file) %></td>
+    <td><%= link_to 'Destroy', vmt_file, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Vmt file', new_vmt_file_path %>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  filename: MyString
+  description: MyText
+  last_updated: 2012-09-14 15:43:10
+  revision: 1
+  last_update_by: MyString
+  is_locked: false
+  vmtdata: MyText
+  eco: false
+  in_agile: false
+  oem: MyString
+  oem_group: MyString
+
+two:
+  filename: MyString
+  description: MyText
+  last_updated: 2012-09-14 15:43:10
+  revision: 1
+  last_update_by: MyString
+  is_locked: false
+  vmtdata: MyText
+  eco: false
+  in_agile: false
+  oem: MyString
+  oem_group: MyString

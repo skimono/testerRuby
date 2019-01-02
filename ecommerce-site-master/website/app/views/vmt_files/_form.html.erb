@@ -1,0 +1,61 @@
+<%= form_for(@vmt_file) do |f| %>
+  <% if @vmt_file.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vmt_file.errors.count, "error") %> prohibited this vmt_file from being saved:</h2>
+
+      <ul>
+      <% @vmt_file.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :filename %><br />
+    <%= f.text_field :filename %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :last_updated %><br />
+    <%= f.datetime_select :last_updated %>
+  </div>
+  <div class="field">
+    <%= f.label :revision %><br />
+    <%= f.number_field :revision %>
+  </div>
+  <div class="field">
+    <%= f.label :last_update_by %><br />
+    <%= f.text_field :last_update_by %>
+  </div>
+  <div class="field">
+    <%= f.label :is_locked %><br />
+    <%= f.check_box :is_locked %>
+  </div>
+  <div class="field">
+    <%= f.label :vmtdata %><br />
+    <%= f.text_area :vmtdata %>
+  </div>
+  <div class="field">
+    <%= f.label :eco %><br />
+    <%= f.check_box :eco %>
+  </div>
+  <div class="field">
+    <%= f.label :in_agile %><br />
+    <%= f.check_box :in_agile %>
+  </div>
+  <div class="field">
+    <%= f.label :oem %><br />
+    <%= f.text_field :oem %>
+  </div>
+  <div class="field">
+    <%= f.label :oem_group %><br />
+    <%= f.text_field :oem_group %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

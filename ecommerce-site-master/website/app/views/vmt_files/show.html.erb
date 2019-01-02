@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Filename:</b>
+  <%= @vmt_file.filename %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @vmt_file.description %>
+</p>
+
+<p>
+  <b>Last updated:</b>
+  <%= @vmt_file.last_updated %>
+</p>
+
+<p>
+  <b>Revision:</b>
+  <%= @vmt_file.revision %>
+</p>
+
+<p>
+  <b>Last update by:</b>
+  <%= @vmt_file.last_update_by %>
+</p>
+
+<p>
+  <b>Is locked:</b>
+  <%= @vmt_file.is_locked %>
+</p>
+
+<p>
+  <b>Vmtdata:</b>
+  <%= @vmt_file.vmtdata %>
+</p>
+
+<p>
+  <b>Eco:</b>
+  <%= @vmt_file.eco %>
+</p>
+
+<p>
+  <b>In agile:</b>
+  <%= @vmt_file.in_agile %>
+</p>
+
+<p>
+  <b>Oem:</b>
+  <%= @vmt_file.oem %>
+</p>
+
+<p>
+  <b>Oem group:</b>
+  <%= @vmt_file.oem_group %>
+</p>
+
+
+<%= link_to 'Edit', edit_vmt_file_path(@vmt_file) %> |
+<%= link_to 'Back', vmt_files_path %>
